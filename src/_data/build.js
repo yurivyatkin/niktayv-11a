@@ -1,7 +1,7 @@
-require('dotenv').config()
+require('dotenv').config();
 
 /**
- * Setup a current env and timestamp with timezone support 
+ * Setup a current env and timestamp with timezone support
  *  for use in footer and other non-content file locations
  */
 module.exports = {
@@ -9,4 +9,4 @@ module.exports = {
   timestamp: new Date(),
   timezone: process.env.TIMEZONE || 'UTC',
   url: process.env.URL || 'http://localhost:8080',
-}
+};
