@@ -3,7 +3,7 @@ title: Manage Hero Graphics, Carousels, Splits, and Video
 date: 2020-09-11T17:44:03.000Z
 excerpt: Manage Hero content such as full screen graphics, carousels, splits, video, and buttons
 author: shane-robinson
-draft: 
+draft:
 seo:
   title:
   description:
@@ -26,10 +26,11 @@ heroSettings:
   buttonURL: /contact/ # full url required. Example: https://thisdomain.com/somepage/
   buttonTextColor: # leave blank to inherit from /src/_data/colors.buttonCustom or buttonDefault
   buttonBgColor: # leave blank to inherit from /src/_data/colors.buttonCustom.bg or buttonDefault.bg
-  image: /assets/images/home/plane.jpg # image URL
-  imagePosition: left # options = left, center, right
-  imageOpacity: opacity-50 # options = opacity-25, opacity-50, opacity-75, opacity-100 (default)
-  imageOpacityFilter: black # options = black or white (default) -> really depends on your background image
+  bg:
+    image: home/copter.jpg # image URL
+    imagePosition: left # options = left, center, right
+    opacityMobile: opacity-50 # options opacity-n, 5, 10, 15, 20, 25, 50, 75, 100 (default)
+    opacityDesktop: opacity-75 # Leave blank to inherit opacityMobile, use same options as opacityMobile
   carousel:
     images:
       - /assets/images/home/6.jpg
@@ -54,14 +55,14 @@ This system ships with default support for full width Hero content of almost any
 - Full screen images/graphics
 - Full screen carousels/sliders
 - Full screen background videos
-- And full screen splits *(text one side, image the other)*
+- And full screen splits _(text one side, image the other)_
 
 An Editor can easily manage all this via Frontmatter. There are two parts to managing Hero frontmatter:
 
 1. hero:
 2. heroSettings:
 
-> :bulb: **NOTE:** You don't need ANY of the `hero:` or `heroSettings:` frontmatter elements if you're not using a Hero. Check any of the other .md Post files and you'll see no Hero frontmatter there. 
+> :bulb: **NOTE:** You don't need ANY of the `hero:` or `heroSettings:` frontmatter elements if you're not using a Hero. Check any of the other .md Post files and you'll see no Hero frontmatter there.
 
 ## 1. Frontmatter -> hero:
 
@@ -79,7 +80,7 @@ Also, if a `hero: carousel` is selected, the `/src/_includes/layouts/base.njk` f
 
 ## 2. Frontmatter -> heroSettings:
 
-Here's where it gets complicated for Editors. There are a series of required frontmatter `heroSettings`. Some are shared across the different heros. Some are specific to one hero type or another. 
+Here's where it gets complicated for Editors. There are a series of required frontmatter `heroSettings`. Some are shared across the different heros. Some are specific to one hero type or another.
 
 I've commented the `heroSettings` keys in this and the `/src/index.md` files and hopefully those comments are enough to get you on your way. Here's the current relevant frontmatter for this page:
 
@@ -97,10 +98,11 @@ heroSettings:
   buttonURL: /contact/ # full url required. Example: https://thisdomain.com/somepage/
   buttonTextColor: # leave blank to inherit from /src/_data/colors.buttonCustom or buttonDefault
   buttonBgColor: # leave blank to inherit from /src/_data/colors.buttonCustom.bg or buttonDefault.bg
-  image: /assets/images/home/plane.jpg # image URL
-  imagePosition: left # options = left, center, right
-  imageOpacity: opacity-50 # options = opacity-25, opacity-50, opacity-75, opacity-100 (default)
-  imageOpacityFilter: black # options = black or white (default) -> really depends on your background image
+  bg:
+    image: home/copter.jpg # image URL
+    imagePosition: left # options = left, center, right
+    opacityMobile: opacity-50 # options opacity-n, 5, 10, 15, 20, 25, 50, 75, 100 (default)
+    opacityDesktop: opacity-75 # Leave blank to inherit opacityMobile, use same options as opacityMobile
   carousel:
     images:
       - /assets/images/home/6.jpg
@@ -115,6 +117,6 @@ heroSettings:
 
 {% wrap "text-gray-700 text-sm bg-red-100 p-2 border border-red-300 rounded-lg my-4" %}
 
-:fire: **IMPORTANT:** When writing or modifying YAML Frontmatter it's **VERY IMPORTANT** to make sure you have the indents correct. I have [VSCode](https://code.visualstudio.com/) configured to use 2 spaces for tab. 4 spaces can mess up markdown parsing so it's very important *(if you're just getting started with programming and markdown)* to configure your code editor correctly and watch those spaces/tabs in your YAML Frontmatter.
+:fire: **IMPORTANT:** When writing or modifying YAML Frontmatter it's **VERY IMPORTANT** to make sure you have the indents correct. I have [VSCode](https://code.visualstudio.com/) configured to use 2 spaces for tab. 4 spaces can mess up markdown parsing so it's very important _(if you're just getting started with programming and markdown)_ to configure your code editor correctly and watch those spaces/tabs in your YAML Frontmatter.
 
 {% endwrap %}
