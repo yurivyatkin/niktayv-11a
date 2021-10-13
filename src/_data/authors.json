@@ -61,6 +61,59 @@
     ]
   },
   {
+    "slug": "yuri-vyatkin",
+    "name": "Yuri Vyatkin",
+    "image": "/assets/images/authors/shane-robinson.jpg",
+    "bio": "Born in Angarsk. Studied maths in Novosibirsk and Auckland. In New Zealand since 2004.",
+    "companyWebsites": [
+      {
+        "label": "Zhurnik",
+        "url": "https://www.zurnil.com",
+        "email": "info@zhurnik.com"
+      }
+    ],
+    "personalWebsites": [
+      {
+        "label": "Niktayv.com",
+        "url": "https://www.niktayv.com"
+      }
+    ],
+    "socialWebsites": [
+      {
+        "label": "dribbble",
+        "url": ""
+      },
+      {
+        "label": "github",
+        "url": "https://github.com/yurivyatkin"
+      },
+      {
+        "label": "instagram",
+        "url": "https://instagram.com/yurivyatkin"
+      },
+      {
+        "label": "linkedin",
+        "url": "https://linkedin.com/in/yurivyatkin"
+      },
+      {
+        "label": "piedpiper",
+        "url": ""
+      },
+      {
+        "label": "pinterest",
+        "url": ""
+      },
+      {
+        "label": "twitter",
+        "url": "https://twitter.com/niktayv"
+      },
+      {
+        "label": "youtube",
+        "url": ""
+      }
+    ]
+  },
+  {
     "slug": "roxanne-darling",
     "name": "Roxanne Darling",
     "image": "/assets/images/authors/roxanne-darling.jpg",
