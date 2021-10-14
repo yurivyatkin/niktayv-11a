@@ -1,9 +1,9 @@
 ---
 # This is a full listing of available Frontmatter options, available for any content (.md) file.
-title: Let's talk about static sites!
+title: Better now
 layout: page
 excerpt: # used for page excerpts and META (will be overwritten if SEO used below)
-author: shane-robinson # only displayed on Post lists and detail views. Defaults to _data/meta.authorURL
+author: yuri-vyatkin # only displayed on Post lists and detail views. Defaults to _data/meta.authorURL
 eleventyNavigation: # Required if want to display in Main Nav Bar
   key: main # "main" is required
   title: Welcome # as it will appear in the nav
